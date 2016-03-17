@@ -1,0 +1,21 @@
+<snippet>
+	<content>
+import urllib
+import urllib2
+${1:module}
+
+url = '${2:URL}'
+values = {${3:Data_Values}}
+data = urllib.urlencode(values)
+headers = {
+    ${4:'user_agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.82 Chrome/48.0.2564.82 Safari/537.36'}
+}
+rqst = urllib2.Request(url, data, headers)
+
+rsps = urllib2.urlopen(rqst)
+</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>spider</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

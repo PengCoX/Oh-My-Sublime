@@ -1,0 +1,19 @@
+Determining if the function clang_getExpansionLocation exists failed with the following output:
+Change Dir: /home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec348490778/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec348490778.dir/build.make CMakeFiles/cmTryCompileExec348490778.dir/build
+make[1]: 正在进入目录 `/home/pengc825/Sublime/Packages/SublimeClang/src/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec348490778.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clang_getExpansionLocation -isysroot / -L"/home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/../internals" -L/usr/local/lib -L/usr/lib   -o CMakeFiles/cmTryCompileExec348490778.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec348490778
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec348490778.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clang_getExpansionLocation -isysroot / -L"/home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/../internals" -L/usr/local/lib -L/usr/lib    CMakeFiles/cmTryCompileExec348490778.dir/CheckFunctionExists.c.o  -o cmTryCompileExec348490778 -rdynamic -lclang -lLLVM-3.2 
+/usr/bin/ld: cannot find -lLLVM-3.2
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec348490778] 错误 1
+make[1]:正在离开目录 `/home/pengc825/Sublime/Packages/SublimeClang/src/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec348490778/fast] 错误 2
+
+

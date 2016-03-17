@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"Anaconda",
+		"AutoFileName",
+		"BracketHighlighter",
+		"C Improved",
+		"C++ Snippets",
+		"C++NamespaceTool",
+		"C++YouCompleteMe",
+		"Colorcoder",
+		"ConvertToUTF8",
+		"CTags",
+		"Dayle Rees Color Schemes",
+		"DocBlockr",
+		"EditorConfig",
+		"ExpandRegion",
+		"FileDiffs",
+		"Package Control",
+		"PackageResourceViewer",
+		"Python Completions",
+		"Python PEP8 Autoformat",
+		"SideBarEnhancements",
+		"SideBarFolders",
+		"SublimeAStyleFormatter",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-pyflakes",
+		"SublimeLinter-pyyaml",
+		"SublimeREPL",
+		"SublimeTmpl",
+		"Theme - Cola",
+		"Theme - Nexus",
+		"Theme - Numix",
+		"Theme - Soda",
+		"Tomorrow Color Schemes",
+		"Vintageous",
+		"WakaTime",
+		"Zeal"
+	]
+}
