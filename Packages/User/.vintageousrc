@@ -2,4 +2,8 @@
 :map H ^
 :map i a
 :map a i
+:map I A
+:map A I
+:map b e
+:map e b
 

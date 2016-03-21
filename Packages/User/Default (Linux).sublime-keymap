@@ -1,6 +1,8 @@
 [
+
 /* ---------- 编辑器主功能快捷键 ---------- */
     //{ "keys": ["ctrl+b"], "command": "build", "args": {"variant": "Run"} },
+    //{"keys": ["ctrl+k", "ctrl+k"], "command": "delete_word", "args": {"forward": false}, "context": [{"key": "vi_insert_mode_aware"}, {"key": "vi_use_ctrl_keys"}]},
     { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
     // { "keys": ["f9"], "command": "build", "args": {"variant": "RunInCommand"} },
     //{ "keys": ["ctrl+b"], "command": "build", "args": {"variant": "RunInCommand"} },
@@ -15,37 +17,17 @@
     { "keys": ["ctrl+k", "ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
     { "keys": ["ctrl+u"], "command": "move", "args": {"by": "pages", "forward": false} },
     { "keys": ["ctrl+f"], "command": "move", "args": {"by": "pages", "forward": true} },
+
 /* ---------- 编辑器编辑功能快捷键 ---------- */
     // { "keys": ["ctrl+k", "ctrl+j"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
     // { "keys": ["ctrl+k", "ctrl+l"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
     // { "keys": ["ctrl+i"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
-    // { "keys": ["ctrl+m"], "command": "expand_region" },
+    { "keys": ["ctrl+k", "ctrl+m"], "command": "expand_region" },
     { "keys": ["ctrl+k", "ctrl+a"], "command": "alignment" },
     { "keys": ["ctrl+l"], "command": "indent" },
     { "keys": ["ctrl+h"], "command": "unindent" },
 
 /* ---------- Vintage 模块快捷键 ---------- */
-/*    { "keys": ["j","k"], "command": "exit_insert_mode",
-        "context":
-        [   
-            { "key": "setting.command_mode", "operand": false },
-            { "key": "setting.is_widget", "operand": false }
-        ]
-    },*/
-    /* 
-    { "keys": ["j","k"], "command": "hide_auto_complete", "context":
-        [
-            { "key": "auto_complete_visible", "operator": "equal", "operand": true }
-        ]
-    },
-    */
-    // { "keys": ["j","k"], "command": "vi_cancel_current_action", "context":
-    //     [
-    //         { "key": "setting.command_mode" },
-    //         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": false },
-    //         { "key": "vi_has_input_state" }
-    //     ]
-    // },
     {
         "keys": ["j","k"],
         "command": "_enter_normal_mode",
@@ -73,22 +55,26 @@
      }},*/
 
 /* ---------- SublimeCodeIntel 模块快捷键 ---------- */
-    { "keys": ["shift+ctrl+space"], "command": "code_intel_auto_complete" },
-    { "keys": ["super+alt+ctrl+up"], "command": "goto_python_definition"},
-    { "keys": ["super+alt+ctrl+left"], "command": "back_to_python_definition"},
+    { "keys": ["ctrl+k", "ctrl+space"], "command": "code_intel_auto_complete" },
+    // { "keys": ["super+alt+ctrl+up"], "command": "goto_python_definition"},
+    // { "keys": ["super+alt+ctrl+left"], "command": "back_to_python_definition"},
 
 /* ---------- SublimeLiner 模块快捷键 ---------- */
     { "keys": ["ctrl+k", "l"], "command": "sublimelinter_lint" },
-    { "keys": ["ctrl+k", "n"], "command": "sublimelinter_goto_error", "args": {"direction": "next"} },
-    { "keys": ["ctrl+k", "p"], "command": "sublimelinter_goto_error", "args": {"direction": "previous"} },
+    { "keys": ["super+alt+ctrl+n"], "command": "sublimelinter_goto_error", "args": {"direction": "next"} },
+    { "keys": ["super+alt+ctrl+p"], "command": "sublimelinter_goto_error", "args": {"direction": "previous"} },
     { "keys": ["ctrl+k", "a"], "command": "sublimelinter_show_all_errors" },
-    { "keys": ["ctrl+k", "t"], "command": "sublimelinter_toggle_linter", "args": {"which": "all"}},
+    { "keys": ["super+alt+ctrl+t"], "command": "sublimelinter_toggle_linter", "args": {"which": "all"}},
 
 /* ---------- Anaconda 模块快捷键 ---------- */
-    {"command": "anaconda_goto", "keys": ["ctrl+k", "ctrl+g"]},
-    {"command": "anaconda_find_usages", "keys": ["ctrl+k", "f"]},
+    {"command": "anaconda_goto", "keys": ["ctrl+k", "g"]},
     {"command": "anaconda_doc", "keys": ["ctrl+k", "d"]},
-    {"command": "anaconda_auto_format", "keys": ["ctrl+alt+r"]},
+    // {"command": "anaconda_auto_format", "keys": ["ctrl+alt+r"]},
+        {
+        "command": "anaconda_find_usages", "keys": ["ctrl+k", "f"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
 
 /* ---------- SublimeAStyleFormart 模块快捷键 ---------- */
     {
@@ -103,15 +89,21 @@
         "keys": ["ctrl+k", "g"]
     },
     {
+    "command": "clang_go_back",
+    "context": [{"key": "clang_supported_language"}],
+    "keys": ["ctrl+k", "f"]
+    },
+    /*  {
         "command": "clang_goto_implementation",
         "context": [{"key": "clang_supported_language"}],
-        "keys": ["ctrl+k", "f"]
-    },
+        "keys": ["ctrl+k", "l"]
+    },*/
     {
     "command": "clang_toggle_panel",
     "keys": ["ctrl+k", "e"]
     },
     //{ "keys": ["ctrl+k", "ctrl+w"], "command": "close" },
+
 /* ---------- Zeal 模块快捷键 ---------- */
     {
         "keys": ["f1"],

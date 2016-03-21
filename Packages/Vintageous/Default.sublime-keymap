@@ -6,9 +6,9 @@
 	{"keys": ["escape"], "command": "_enter_normal_mode", 	"args": {"mode": "mode_insert"},	"context": [{"key": "vi_insert_mode_aware"}]},
 
 	{"keys": ["enter"],				"command": "press_key", "args": {"key": "<cr>"},		"context": [{"key": "vi_command_mode_aware"}]},
-	{"keys": ["ctrl+enter"],		"command": "press_key", "args": {"key": "<C-cr>"},		"context": [{"key": "vi_command_mode_aware"}]},
+	//{"keys": ["ctrl+enter"],		"command": "press_key", "args": {"key": "<C-cr>"},		"context": [{"key": "vi_command_mode_aware"}]},
 	{"keys": ["shift+enter"],		"command": "press_key", "args": {"key": "<S-cr>"},		"context": [{"key": "vi_command_mode_aware"}]},
-	{"keys": ["shift+ctrl+enter"],	"command": "press_key", "args": {"key": "<C-S-cr>"},	"context": [{"key": "vi_command_mode_aware"}]},
+	//{"keys": ["shift+ctrl+enter"],	"command": "press_key", "args": {"key": "<C-S-cr>"},	"context": [{"key": "vi_command_mode_aware"}]},
 
 
 	{"keys": ["ctrl+k", "ctrl+k"], "command": "delete_word", "args": {"forward": false}, "context": [{"key": "vi_insert_mode_aware"}, {"key": "vi_use_ctrl_keys"}]},
@@ -118,7 +118,7 @@
 	{"keys": ["ctrl+j"], "command": "press_key", "args": {"key": "<C-j>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
 	// {"keys": ["ctrl+k"], "command": "press_key", "args": {"key": "<C-k>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
 	{"keys": ["ctrl+l"], "command": "press_key", "args": {"key": "<C-l>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
-	{"keys": ["ctrl+m"], "command": "press_key", "args": {"key": "<C-m>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
+	//{"keys": ["ctrl+m"], "command": "press_key", "args": {"key": "<C-m>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
 	// {"keys": ["ctrl+n"], "command": "press_key", "args": {"key": "<C-n>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
 	{"keys": ["ctrl+o"], "command": "press_key", "args": {"key": "<C-o>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
 	{"keys": ["ctrl+p"], "command": "press_key", "args": {"key": "<C-p>"}, "context": [{"key": "vi_command_mode_aware"}, 	{"key": "vi_use_ctrl_keys"}]},
