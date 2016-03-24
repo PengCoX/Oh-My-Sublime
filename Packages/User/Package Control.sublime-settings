@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"All Autocomplete",
 		"Anaconda",
 		"AutoFileName",
 		"BracketHighlighter",
@@ -22,6 +23,7 @@
 		"FileDiffs",
 		"Package Control",
 		"PackageResourceViewer",
+		"Pretty JSON",
 		"Python Completions",
 		"Python PEP8 Autoformat",
 		"SideBarEnhancements",

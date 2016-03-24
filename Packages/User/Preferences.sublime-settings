@@ -109,7 +109,8 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"CTags"
+		"CTags",
+		"Pretty JSON"
 	],
 	"indent_guide_options":
 	[
@@ -157,7 +158,7 @@
 	"spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
 	"tab_completion": true,
 	"tab_size": 8,
-	"theme": "Cola.sublime-theme",
+	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
