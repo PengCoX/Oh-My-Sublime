@@ -43,7 +43,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Colorcoder/Tomorrow-Night-Eighties (Colorcoded) (SL) (Colorcoded).tmTheme",
+	"color_scheme": "Packages/Colorcoder/Monokai (Colorcoded) (SL) (Colorcoded) (SublimePythonIDE) (Colorcoded).tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -110,6 +110,7 @@
 	"ignored_packages":
 	[
 		"CTags",
+		"Floobits",
 		"Pretty JSON"
 	],
 	"indent_guide_options":
@@ -137,7 +138,7 @@
 	"match_tags": true,
 	"move_to_limit_on_up_down": false,
 	"open_files_in_new_window": true,
-	"original_color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night-Eighties (Colorcoded) (SL).tmTheme",
+	"original_color_scheme": "Packages/User/Monokai (Colorcoded) (SL) (Colorcoded) (SublimePythonIDE).tmTheme",
 	"overlay_scroll_bars": "system",
 	"preview_on_click": true,
 	"remember_full_screen": false,
