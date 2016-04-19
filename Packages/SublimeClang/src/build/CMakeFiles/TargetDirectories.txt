@@ -1,1 +1,3 @@
+/home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/build/CMakeFiles/edit_cache.dir
+/home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/build/CMakeFiles/rebuild_cache.dir
 /home/pengc825/.config/sublime-text-3/Packages/SublimeClang/src/build/CMakeFiles/cache.dir

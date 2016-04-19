@@ -60,7 +60,17 @@ Please add "sublime_executable": "/path/to/subl" to your ~/.floorc.json and rest
 
 def open_workspace_window3(abs_path, cb):
     def finish(w):
-        w.set_project_data({'folders': [{'path': abs_path}]})
+        folders = []
+        project_data = w.project_data() or {}
+        try:
+            folders = project_data.get('folders', [])
+        except Exception:
+            pass
+        p = utils.unfuck_path(abs_path)
+        if not [utils.unfuck_path(f.get('path')) == p for f in folders]:
+            folders.insert(0, {'path': abs_path})
+        project_data['folders'] = folders
+        w.set_project_data(project_data)
         cb(w)
 
     def get_empty_window():
@@ -69,6 +79,13 @@ def open_workspace_window3(abs_path, cb):
             try:
                 folders = project_data.get('folders', [])
                 if len(folders) == 0 or not folders[0].get('path'):
+                    # no project data. co-opt this window
+                    return w
+            except Exception as e:
+                print('project_data.get():', str_e(e))
+            try:
+                folders = w.folders()
+                if len(folders) == 0:
                     # no project data. co-opt this window
                     return w
             except Exception as e:

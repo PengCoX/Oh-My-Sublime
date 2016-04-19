@@ -43,11 +43,11 @@
 	"caret_extra_width": 0,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Colorcoder/Monokai (Colorcoded) (SL) (Colorcoded) (SublimePythonIDE) (Colorcoded).tmTheme",
+	"color_scheme": "Packages/Colorcoder/Tomorrow-Night-Eighties (Colorcoded) (SL) (Colorcoded) (SublimePythonIDE) (Colorcoded).tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
-	"default_line_ending": "system",
+	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"drag_text": true,
@@ -97,11 +97,11 @@
 	[
 		"directwrite"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "Ubuntu Mono",
 	"font_options":
 	[
 	],
-	"font_size": 10,
+	"font_size": 11,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
@@ -138,7 +138,7 @@
 	"match_tags": true,
 	"move_to_limit_on_up_down": false,
 	"open_files_in_new_window": true,
-	"original_color_scheme": "Packages/User/Monokai (Colorcoded) (SL) (Colorcoded) (SublimePythonIDE).tmTheme",
+	"original_color_scheme": "Packages/User/Tomorrow-Night-Eighties (Colorcoded) (SL) (Colorcoded) (SublimePythonIDE).tmTheme",
 	"overlay_scroll_bars": "system",
 	"preview_on_click": true,
 	"remember_full_screen": false,
