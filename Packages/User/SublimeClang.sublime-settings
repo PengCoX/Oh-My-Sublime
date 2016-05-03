@@ -13,6 +13,8 @@
         "-isystem", "/usr/include/boost",
         "-isystem", "/usr/include/boost/**",
         "-isystem", "/usr/lib/gcc/x86_64-linux-gnu/5/include",
-        "-isystem", "/usr/lib/gcc/x86_64-linux-gnu/5/include/*"
+        "-isystem", "/usr/lib/gcc/x86_64-linux-gnu/5/include/*",
+        "-isystem", "/usr/lib/clang/3.8/include/",
+        "-isystem", "/usr/lib/clang/3.8/include/*",
     ]
 }
